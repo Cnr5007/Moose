@@ -2,19 +2,107 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <style>
+            td{
+                text-align: right;
+            }
+        </style>
+        <link href="restaurantStyles.css"
+              rel="stylesheet"
+              type="text/css" />
     </head>
-     <body>
-         <h1 align="center"h1>Six Oh 3 Pizzeria</h1>
-         <hr>
-         <a href="restaurantHome.html">Home</a>
-         <a href="restaurantMenu.html">Menu</a>
-         <a href="restaurantContactUs.html">Contact Us</a>
-         <hr>
-         <div align="center">
-             <hr>
-             603 Seacoast Ave, Hampton Beach, NH, 03842
-             <p></p>
-             603-888-8888
-         </div>
-     </body>
+    <header>
+        <h1>Six Oh 3 Pizzeria<h1>
+    </header>
+    <body>
+        <hr>
+        <a href="restaurantHome.html">Home</a>
+        <a href="restaurantMenu.html">Menu</a>
+        <a href="restaurantContactUs.html">Contact Us</a>
+        <hr>
+                <form action="#" method="post">
+        <table>
+            <tr>
+                <td align="right">
+                    Name:
+                </td>
+                <td>
+                    <input type="text" name="Name" />
+                </td>
+             </tr>
+            <tr>
+                <td align="right">
+                    Email:
+                </td>
+                <td>
+                    <input type="text" name="Email" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Phone:
+                </td>
+                <td>
+                    <input type="text" name="Phone" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Reason for Inquiry:
+                </td>
+                <td>            
+                    <select name="Reason">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                </td>
+                <td>
+                    <textarea id="AdditionalInfo" name="AdditionalInfo" type="text" /></textarea>
+                </td>
+            <tr>
+                <td align="right">
+                    Have you been to the restaurant?
+                </td>
+                <td>
+                    <input id="Reason" name="Reason" type="radio" checked/>
+                    <label id="ReasonLabel" for="Reason">No</label>
+                    <input id="Reason" name="Reason" type="radio" />
+                    <label id="ReasonLabel" for="Reason">Yes</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Best days to contact you:
+                </td>
+                <td align="center">
+                    <input type="checkbox" name="termsofService" value="read" /> M 
+                    <input type="checkbox" name="termsofService" value="read" /> T 
+                    <input type="checkbox" name="termsofService" value="read" /> W 
+                    <input type="checkbox" name="termsofService" value="read" /> Th 
+                    <input type="checkbox" name="termsofService" value="read" /> F 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td align="center">
+                    <input type="submit" id="SubmitButton" value="Send Request" />
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+    <footer>
+            <hr>
+            603 Seacoast Ave, Hampton Beach, NH, 03842
+            <p></p>
+            603-888-8888
+    </footer>
 </html>
