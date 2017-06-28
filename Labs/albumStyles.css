@@ -1,0 +1,21 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}table {
+    table-layout: fixed;
+}
+th {
+    background:grey;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    width: 300px;
+    padding: 0;
+    border: 1px solid black; 
+    margin: 0;
+    text-align:center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
