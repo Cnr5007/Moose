@@ -3,8 +3,8 @@
     <head>
         <title>Contact Us</title>
         <style>
-            td{
-                text-align: right;
+            label{
+                font-weight: bold;
             }
         </style>
         <link href="restaurantStyles.css"
@@ -20,38 +20,39 @@
         <a href="restaurantMenu.html">Menu</a>
         <a href="restaurantContactUs.html">Contact Us</a>
         <hr>
-                <form action="#" method="post">
+        <form action="#" method="post">
         <table>
             <tr>
                 <td align="right">
-                    Name:
+                    <label id="nameLabel" for="name">Name:</label>
                 </td>
+                </div>
                 <td>
-                    <input type="text" name="Name" />
+                    <input id="name" name="name" type="text"/>
                 </td>
              </tr>
             <tr>
                 <td align="right">
-                    Email:
+                    <label id="emailLabel" for="email">Email:</label>
                 </td>
                 <td>
-                    <input type="text" name="Email" />
+                    <input id="email" name="Email" type="text"/>
                 </td>
             </tr>
             <tr>
                 <td align="right">
-                    Phone:
+                    <label id="phoneLabel" for="phone">Phone:</label>
                 </td>
                 <td>
-                    <input type="text" name="Phone" />
+                    <input id="phone" name="Phone" type="text"/>
                 </td>
             </tr>
             <tr>
                 <td align="right">
-                    Reason for Inquiry:
+                    <label id="inquiryLabel" for="inquiry">Reason for Inquiry:</label>
                 </td>
                 <td>            
-                    <select name="Reason">
+                    <select name="inquiry">
                         <option value="Catering">Catering</option>
                         <option value="PrivateParty">Private Party</option>
                         <option value="Feedback">Feedback</option>
@@ -68,7 +69,7 @@
                 </td>
             <tr>
                 <td align="right">
-                    Have you been to the restaurant?
+                    <label id="restaurantLabel" for="restaurant">Have you been to the restaurant?</label>
                 </td>
                 <td>
                     <input id="Reason" name="Reason" type="radio" checked/>
@@ -79,9 +80,9 @@
             </tr>
             <tr>
                 <td align="right">
-                    Best days to contact you:
+                    <label id="contactLabel" for="contact">Best days to contact you:</label>
                 </td>
-                <td align="center">
+                <td>
                     <input type="checkbox" name="termsofService" value="read" /> M 
                     <input type="checkbox" name="termsofService" value="read" /> T 
                     <input type="checkbox" name="termsofService" value="read" /> W 
@@ -92,7 +93,7 @@
             <tr>
                 <td>
                 </td>
-                <td align="center">
+                <td>
                     <input type="submit" id="SubmitButton" value="Send Request" />
                 </td>
             </tr>
