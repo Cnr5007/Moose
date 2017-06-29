@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Album Page</title>
+        <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
         <style>
             body {
                 background-color:lightsteelblue;
@@ -13,9 +14,6 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: xx-large;
                 font-weight: bold;
-            }
-            #img {
-                background-image: url("C:\Users\N0190934\Desktop\repos\Moose\images\AllTheRightReasons.jpg");
             }
             #bandlist {
                 font-style: italic;
@@ -31,99 +29,104 @@
                 font-style: italic;
                 background-color:peachpuff;
             }
+            #atrr{
+                background-image: url("C:\Users\N0190934\Desktop\repos\Moose\images\AllTheRightReasons.jpg");
+            }
         </style>
         <link href="albumStyles.css"
               rel="stylesheet"
               type="text/css" />
     </head>
     <body>
-        <div align="center" id="img">
-            <img src="C:\Users\N0190934\Desktop\repos\Moose\images\AllTheRightReasons.jpg"/>
-        </div>  
-        <div align="center">
-            <p style="color:midnightblue;">
-                All the Right Reasons
-            </p>
-        <h2><a href="http://www.nickelback.com/">Nickelback</a></h2>
-        <h3>September 28, 2005</h3>
-        <hr></hr>
-        </div>
-        <div id='band'>
-            <h2 align="center">Band Members and Producers</h2>
-        </div>
-        <ul id="bandlist">
-            <li>Chad Kroeger - Lead Guitar</li>
-            <li>Ryan Peake - Guitar</li>
-            <li>Mike Kroeger - Bass Guitar</li>
-            <li>Daniel Adair - Drums</li>
-            <li>Joey Moi - Producer</li>
-        </ul>
-        <div align="center">
-            <table>
-            <caption><h2>Tracks</h2></caption>
-            <thead>
-                <tr>
-                    <th width="1">Track #</th>
-                    <th width="200">Track Title</th>
-                    <th width="800">Track Length</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Follow You Home</td>
-                    <td>4:20</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Fight for All the Wrong Reasons</td>
-                    <td>3:44</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Photograph</td>
-                    <td>4:18</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Animals</td>
-                    <td>3:06</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Savin' Me</td>
-                    <td>3:39</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Far Away</td>
-                    <td>3:58</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Next Contestant</td>
-                    <td>3:34</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Side of a Bullet</td>
-                    <td>3:00</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>If Everyone Cared</td>
-                    <td>3:38</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Someone That You're with</td>
-                    <td>4:01</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Rockstar</td>
-                    <td>4:15</td>
-                </tr>
-            </thead>            
-        </table>
+        <div class="container">
+            <div align="center" id="atrr">
+                <img src="C:/Users/N0190934/Desktop/repos/Moose/images/AllTheRightReasons.jpg" class="img-circle"/>
+            </div>  
+            <div align="center">
+                <p style="color:midnightblue;">
+                    All the Right Reasons
+                </p>
+                <h2><a href="http://www.nickelback.com/">Nickelback</a></h2>
+                <h3>September 28, 2005</h3>
+                <hr></hr>
+            </div>
+            <div id='band'>
+                <h2 align="center">Band Members and Producers</h2>
+            </div>
+            <ul id="bandlist">
+                <li>Chad Kroeger - Lead Guitar</li>
+                <li>Ryan Peake - Guitar</li>
+                <li>Mike Kroeger - Bass Guitar</li>
+                <li>Daniel Adair - Drums</li>
+                <li>Joey Moi - Producer</li>
+            </ul>
+            <div align="center">
+                <table class="table table-striped">
+                <caption><h2 align="center">Tracks</h2></caption>
+                <thead>
+                    <tr>
+                        <th width="10%">Track #</th>
+                        <th width="20%">Track Title</th>
+                        <th width="35%">Track Length</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Follow You Home</td>
+                        <td>4:20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Fight for All the Wrong Reasons</td>
+                        <td>3:44</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Photograph</td>
+                        <td>4:18</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Animals</td>
+                        <td>3:06</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Savin' Me</td>
+                        <td>3:39</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Far Away</td>
+                        <td>3:58</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Next Contestant</td>
+                        <td>3:34</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Side of a Bullet</td>
+                        <td>3:00</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>If Everyone Cared</td>
+                        <td>3:38</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Someone That You're with</td>
+                        <td>4:01</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Rockstar</td>
+                        <td>4:15</td>
+                    </tr>
+                </thead>            
+            </table>
+            </div>
         </div>
     </body>
 </html>
