@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
         <style>
             label{
                 font-weight: bold;
@@ -18,10 +19,21 @@
         <h1>Six Oh 3 Pizzeria<h1>
     </header>
     <body>
+    <div class="container">
         <hr>
-        <a href="restaurantHome.html">Home</a>
-        <a href="restaurantMenu.html">Menu</a>
-        <a href="restaurantContactUs.html">Contact Us</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link home" href="restaurantHome.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu" href="restaurantMenu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contactus" href="restaurantContactUs.html">Contact Us</a>
+            </li>
+        </ul>
         <hr>
         <form action="#" method="post">
         <table>
@@ -102,6 +114,7 @@
             </tr>
         </table>
         </form>
+    </div>
     </body>
     <footer>
             <hr>

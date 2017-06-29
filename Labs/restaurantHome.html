@@ -2,13 +2,18 @@
 <html>
     <head>
         <title>Home</title>
+        <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
         <Style>
              blockquote{
-                 width: 365px;
+                 width: 400px;
                  border: 1px solid black;
-                 padding: 1%;
+                 padding: 5px;
+                 margin: 0;
              }
-             #backgrd{
+             img{
+                 border: 1px solid black;
+             }
+             #backgrdclr{
                  background-color:darksalmon;
              }
         </style>
@@ -19,27 +24,46 @@
     <header>
         <h1>Six Oh 3 Pizzeria<h1>
     </header>
-     <body>
-         <hr>
-         <a href="restaurantHome.html">Home</a>
-         <a href="restaurantMenu.html">Menu</a>
-         <a href="restaurantContactUs.html">Contact Us</a>
-         <hr>
-         <div id="backgrd">
-         <div align="center">
-            <img src="C:\Users\N0190934\Desktop\repos\Moose\images\Pizza.jpg"
-                style="width: 400px;height: 150px"
-                border="1"/>
-         </div>
-         <div align="center">
-             <blockquote>
-                NY style pizza served hot and ready all day long at New Hampshire Seacoast's own Pizzeria. Come today to enjoy your freshly baked pizza just the way you like it! We've been located on the Seacoast for over 35 years! Try a cool refreshing salad, a nice hot sub or take a whole pie home for the family. At Six Oh 3 Pizzeria we're here to make sure you don't go home hungry!
-            </blockquote>
-         </div>
-         </div>
-     </body>
+    <body>
+    <div class="container">
+        <hr>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link home" href="restaurantHome.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu" href="restaurantMenu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contactus" href="restaurantContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+        <hr>
+        <div class="page-header">
+            <h1>Opening a new location soon!</h1>
+        </div>
+        <div id=backgrdclr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div align="center">
+                        <img src="C:\Users\N0190934\Desktop\repos\Moose\images\Pizza.jpg"
+                            style="width: 400px;height: 150px"
+                            border="1"/>
+                    </div>
+                    <div align="center">
+                        <blockquote>
+                            NY style pizza served hot and ready all day long at New Hampshire Seacoast's own Pizzeria. Come today to enjoy your freshly baked pizza just the way you like it! We've been located on the Seacoast for over 35 years! Try a cool refreshing salad, a nice hot sub or take a whole pie home for the family. At Six Oh 3 Pizzeria we're here to make sure you don't go home hungry!
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
     <footer>
-            <hr>
+        <hr>
             603 Seacoast Ave, Hampton Beach, NH, 03842
             <p></p>
             603-888-8888

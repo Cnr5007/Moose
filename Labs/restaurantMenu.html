@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Menu</title>
+        <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
         <style>
            th {
                text-decoration: underline;
            }
-            td {
+            div {
                 text-align: center;
             }
             body {
@@ -18,15 +19,105 @@
               type="text/css" />
     </head>
     <header>
+        <div class="container">
         <h1>Six Oh 3 Pizzeria<h1>
+        </div>
     </header>
-     <body>
-         <hr>
-         <a href="restaurantHome.html">Home</a>
-         <a href="restaurantMenu.html">Menu</a>
-         <a href="restaurantContactUs.html">Contact Us</a>
-         <hr>
-         <table>
+    <body>
+    <div class="container">
+        <hr>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link home" href="restaurantHome.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu" href="restaurantMenu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contactus" href="restaurantContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Seacoast Salad</h3>
+                On the Lighter Side</br>
+                Your choice - with or without cheese Iceberg lettuce, tomatoes, peppers Thousand Island or Ranch Dressing served with a dinner roll</br>
+                $7.50
+            </div>
+            <div class="col-sm-4">
+                <h3>Italian Sausage and Peppers</h3>
+                An All-Time Favorite!</br>
+                Your choice - mild or spicy served on a sausage roll with all the fixings</br>
+                $6.50
+            </div>
+            <div class="col-sm-4">
+                <h3>Classic Chicken Parm</h3>
+                An Italian Classic!</br>
+                Served on a lightly toasted sub roll your choice of a small side salad or a bag of chips</br>
+                $8.50
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Margherita Pizza</h3>
+                A classic!</br>
+                Fresh Mozzarella, Basil and home made Red Sauce</br>
+                Sm. $7.50 Lg. $15.75
+            </div>
+            <div class="col-sm-4">
+                <h3>Meat Lovers Pizza</h3>
+                An all meat special!</br>
+                Ground Beef, Sausage, Ham, Pepperoni, Red Sauce and a three cheese blend</br>
+                Sm. $9.50 Lg. $17.75 
+            </div>
+            <div class="col-sm-4">
+                <h3>Mediterranean Pizza</h3>
+                Garlic, Olive Oil, Spinach,</br>
+                Feta, Tomatoes, Kalamata Olives and Red Onions</br>
+                Sm. $8.50 Lg. $16.75
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Beverages</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Root Beer
+            </div>
+            <div class="col-sm-6">
+                $3.00
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Bottled Water
+            </div>
+            <div class="col-sm-6">
+                $1.25
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Lemonade
+            </div>
+            <div class="col-sm-6">
+                $1.00
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Iced Tea
+            </div>
+            <div class="col-sm-6">
+                $1.25
+            </div>
+        </div>
+        <!--<table>
              <tr>
                  <td><h3>Seacoast Salad</h3></td>
                  <td><h3>Italian Sausage and Peppers</h3></td>
@@ -39,7 +130,7 @@
                     Served with a dinner roll</br>
                     $7.50
                 </td>
-                <td>An All-Time Favorite!
+                <td>An All-Time Favorite!</br>
                     Your choice - mild or spicy
                     Served on a sausage roll
                     with all the fixings</br>
@@ -56,25 +147,25 @@
                  <td><h3>Mediterranean Pizza</h3></td>
              </tr>
              </tr>
-                <td>A classic!
+                <td>A classic!</br>
                     Fresh Mozzarella, Basil and
                     home made Red Sauce</br>
                     Sm. $7.50 Lg. $15.75
                 </td>
-                <td>An all meat special!
+                <td>An all meat special!</br>
                     Ground Beef, Sausage, Ham,
                     Pepperoni, Red Sauce and
                     a three cheese blend</br>
                     Sm. $9.50 Lg. $17.75               
                 </td>    
-                <td>Garlic, Olive Oil, Spinach,
+                <td>Garlic, Olive Oil, Spinach,</br>
                     Feta, Tomatoes, Kalamata Olives
                     and Red Onions</br>
                     Sm. $8.50 Lg. $16.75
                 </td>
             </tr>                  
-         </table>
-         <table>
+        </table>
+        <table>
              <tr>
                  <th><h3>Beverages</h3></th>
              </tr>
@@ -94,8 +185,9 @@
                  <td>Iced Tea</td>
                  <td>$1.25</td>
              </tr>
-         </table>
-     </body>
+        </table>-->
+    </div>
+    </body>
     <footer>
             <hr>
             603 Seacoast Ave, Hampton Beach, NH, 03842
