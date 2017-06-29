@@ -9,3 +9,15 @@ footer {
     height: 100px;
     text-align: center;
 }
+a{
+    font-weight: normal;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    font-weight: bold;
+}
+a:active{
+    text-decoration: none;
+}
