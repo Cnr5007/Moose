@@ -28,13 +28,15 @@
                 text-decoration: underline;
                 background: darkgray;
             }
+            .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+                background-color: peachpuff;
+            }
             td{
                 font-style: italic;
-                background-color:peachpuff;
             }
-            #atrr{
-                background-image: url("C:\Users\N0190934\Desktop\repos\Moose\images\AllTheRightReasons.jpg");
-            }
+            /*#atrr{
+                background-image: url("file:///C:/Users/N0190934/Desktop/repos/Moose/images/AllTheRightReasons.jpg");
+            }*/
         </style>
     </head>
     <body>
@@ -69,6 +71,8 @@
                         <th width="20%">Track Title</th>
                         <th width="35%">Track Length</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>1</td>
                         <td>Follow You Home</td>
@@ -124,7 +128,7 @@
                         <td>Rockstar</td>
                         <td>4:15</td>
                     </tr>
-                </thead>            
+                </tbody>            
             </table>
             </div>
         </div>
