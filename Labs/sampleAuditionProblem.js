@@ -55,13 +55,12 @@ function validateItems() {
         document.forms["sampleAud"]["num2"];
         return false;
     }
-    document.getElementById("submitButton").innerText = "Recalculate";
     getResult();
    return false;
 }
 
 function getResult() {
-    var num = [];
+    var num = new Array();
     for (var i = parseInt(num1); i <= parseInt(num2); i+=parseInt(num3))
         if ((i % 2) == 0){
             num.push(i);
@@ -70,6 +69,6 @@ function getResult() {
     document.getElementById("end").innerHTML = num2;
     document.getElementById("step").innerHTML = num3;
     document.getElementById("numArray").innerHTML = num;
-    document.getElementById("results").style.display = "block";   
+    document.getElementById("results").style.display = "block";
     return num;
 }
