@@ -61,14 +61,15 @@ function validateItems() {
 
 function getResult() {
     var num = new Array();
-    for (var i = parseInt(num1); i <= parseInt(num2); i+=parseInt(num3))
+    for (var i = Number(num1); i <= Number(num2); i+=Number(num3))
         if ((i % 2) == 0){
             num.push(i);
+            // num[i] = num[i] + ("<br/>");
     }
     document.getElementById("start").innerHTML = num1;
     document.getElementById("end").innerHTML = num2;
     document.getElementById("step").innerHTML = num3;
     document.getElementById("numArray").innerHTML = num;
     document.getElementById("results").style.display = "block";
-    return num;
+    return false;
 }
